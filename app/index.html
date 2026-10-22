@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DevOpsFlow CI/CD automation portfolio project">
+  <title>DevOpsFlow | CI/CD Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#">
+      <span class="brand-icon">D</span>
+      <span>DevOps<span class="accent">Flow</span></span>
+    </a>
+
+    <p class="nav-label">WORKSPACE</p>
+    <a class="nav-item active" href="#overview">▦ &nbsp; Overview</a>
+    <a class="nav-item" href="#pipeline">⇄ &nbsp; Pipelines</a>
+    <a class="nav-item" href="#activity">◷ &nbsp; Activity</a>
+
+    <p class="nav-label tools-label">INTEGRATIONS</p>
+    <div class="integration"><span class="tool-dot github">G</span> GitHub <span class="connected">●</span></div>
+    <div class="integration"><span class="tool-dot jenkins">J</span> Jenkins <span class="connected">●</span></div>
+    <div class="integration"><span class="tool-dot docker">D</span> Docker <span class="connected">●</span></div>
+
+    <div class="sidebar-bottom">
+      <div class="avatar">S</div>
+      <div><strong>Subasri S.</strong><small>DevOps Portfolio</small></div>
+    </div>
+  </aside>
+
+  <main class="main" id="overview">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">DEVELOPER WORKSPACE / OVERVIEW</p>
+        <h1>CI/CD Dashboard</h1>
+        <p class="muted">Monitor your delivery workflow from code to deployment.</p>
+      </div>
+      <span class="demo-badge"><span class="pulse"></span> Portfolio Demo</span>
+    </header>
+
+    <section class="welcome">
+      <div>
+        <span class="welcome-tag">DEVOPS AUTOMATION</span>
+        <h2>Ship better software.<br><span>Deliver with confidence.</span></h2>
+        <p>A showcase of a continuous integration and delivery workflow powered by GitHub, Jenkins and Docker.</p>
+        <a class="primary-btn" href="#pipeline">Explore pipeline <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="center-cube">↗</div>
+        <span class="floating-node node-git">GIT</span>
+        <span class="floating-node node-build">BUILD</span>
+        <span class="floating-node node-docker">DOCKER</span>
+        <span class="floating-node node-check">✓</span>
+      </div>
+    </section>
+
+    <section class="section-heading">
+      <div><h2>Workspace overview</h2><p class="muted">A quick snapshot of the project.</p></div>
+      <span class="date-label">PROJECT SNAPSHOT</span>
+    </section>
+
+    <section class="stats-grid">
+      <article class="stat-card">
+        <div class="stat-top"><span>Pipeline stages</span><span class="stat-icon purple">⇄</span></div>
+        <div class="stat-number">04</div>
+        <p>Code · Build · Test · Deploy</p>
+      </article>
+      <article class="stat-card">
+        <div class="stat-top"><span>Core integrations</span><span class="stat-icon blue">⌘</span></div>
+        <div class="stat-number">03</div>
+        <p>GitHub, Jenkins and Docker</p>
+      </article>
+      <article class="stat-card">
+        <div class="stat-top"><span>Application</span><span class="stat-icon green">↗</span></div>
+        <div class="stat-number status-text">Demo</div>
+        <p>Static portfolio dashboard</p>
+      </article>
+      <article class="stat-card">
+        <div class="stat-top"><span>Automation</span><span class="stat-icon orange">⚙</span></div>
+        <div class="stat-number">CI/CD</div>
+        <p>Build and delivery workflow</p>
+      </article>
+    </section>
+
+    <section class="content-grid">
+      <article class="panel pipeline-panel" id="pipeline">
+        <div class="panel-heading">
+          <div><h2>Pipeline workflow</h2><p class="muted">The planned delivery process</p></div>
+          <span class="small-pill">4 STAGES</span>
+        </div>
+
+        <div class="pipeline-list">
+          <div class="pipeline-step">
+            <div class="step-icon git-icon">G</div>
+            <div class="step-copy"><strong>Source code</strong><p>Track changes in GitHub</p></div>
+            <span class="step-state">01</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="pipeline-step">
+            <div class="step-icon build-icon">⚙</div>
+            <div class="step-copy"><strong>Build</strong><p>Jenkins executes the pipeline</p></div>
+            <span class="step-state">02</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="pipeline-step">
+            <div class="step-icon test-icon">✓</div>
+            <div class="step-copy"><strong>Test & validate</strong><p>Check the application files</p></div>
+            <span class="step-state">03</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="pipeline-step">
+            <div class="step-icon docker-icon">D</div>
+            <div class="step-copy"><strong>Container delivery</strong><p>Build and run with Docker</p></div>
+            <span class="step-state">04</span>
+          </div>
+        </div>
+        <div class="notice"><span>ⓘ</span><p>Illustrative workflow. Live build results will be shown only after Jenkins integration is configured.</p></div>
+      </article>
+
+      <article class="panel" id="activity">
+        <div class="panel-heading"><div><h2>Project activity</h2><p class="muted">Workflow checklist</p></div></div>
+        <div class="activity-item"><span class="activity-icon">⌘</span><div><strong>Version control</strong><p>Git repository setup</p></div><span class="check">✓</span></div>
+        <div class="activity-item"><span class="activity-icon">⚙</span><div><strong>Continuous integration</strong><p>Jenkins pipeline setup</p></div><span class="pending">Planned</span></div>
+        <div class="activity-item"><span class="activity-icon">▣</span><div><strong>Containerization</strong><p>Docker image workflow</p></div><span class="pending">Planned</span></div>
+        <div class="activity-item"><span class="activity-icon">↗</span><div><strong>Deployment</strong><p>Local container delivery</p></div><span class="pending">Planned</span></div>
+        <div class="tech-stack">
+          <p class="eyebrow">TECH STACK</p>
+          <div class="tech-tags"><span>Git</span><span>GitHub</span><span>Jenkins</span><span>Docker</span><span>HTML/CSS</span></div>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <span>DevOpsFlow <span class="muted">· CI/CD Portfolio Project</span></span>
+      <span>Designed & developed by <strong>Subasri S.</strong></span>
+    </footer>
+  </main>
+</body>
+</html>
