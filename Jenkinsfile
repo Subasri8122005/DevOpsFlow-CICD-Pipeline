@@ -31,7 +31,13 @@ pipeline {
             }
         }
     }
-
+        stage('Deploy Dashboard') {
+            steps {
+                bat 'docker rm -f devopsflow-dashboard || exit /b 0'
+                bat 'docker run -d --name devopsflow-dashboard -p 8086:80 --restart unless-stopped devopsflow-dashboard:v1'
+                echo 'Dashboard deployed successfully'
+    }
+}
     post {
         success {
             echo 'SUCCESS: DevOpsFlow pipeline completed'
